@@ -1,0 +1,12 @@
+#I did this on google colab. So the commands meets the colab requirements
+
+!pip install gTTS
+from gtts import gTTS 
+import os
+text= "Global warming is the long-term rise in the average temperature of the Earth’s climate system"
+language= 'en'
+speech= gTTS(text, lang= language,slow= False)
+speech.save("text.mp3")
+os.system("start text.mp3")
+
+#This small code creates a text.mp3 file on colab folder section. What you can do is to download the text.mp3 file to listen it.
